@@ -6,6 +6,7 @@ import "./index.css";
 function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
+  const USD_TO_INR = 83;
   const [darkMode, setDarkMode] = useState(true);
 
   // Fetch coins
@@ -55,7 +56,7 @@ function App() {
         className="input-search"
       />
 
-      <CryptoList coins={filteredCoins} />
+      <CryptoList coins={filteredCoins} usdToInr={USD_TO_INR}/>
     </div>
   );
 }
