@@ -4,7 +4,7 @@ const CryptoList = ({ coins, usdToInr }) => {
   return (
     <div>
       <div className="crypto-header">
-        <span style={{marginRight: "100px"}}>Name</span>
+        <span style={{marginRight: "189px"}}>Name</span>
         <span>Price (USD)</span>
         <span>Price (INR)</span>
         <span>Change %</span>
