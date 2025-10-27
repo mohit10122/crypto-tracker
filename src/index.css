@@ -7,7 +7,8 @@ body {
 }
 
 .container {
-  max-width: 99%;
+  width: 99%;
+  max-width: 1400px;
   margin: auto;
   padding: 30px 20px;
   text-align: center;
@@ -88,7 +89,11 @@ h1 {
   border: 2px solid #facc15;
   padding: 2px;
 }
-
+@media (max-width: 768px) {
+  .crypto-card {
+    width: 100%;
+  }
+}  
 .crypto-card h2 {
   font-size: 1.15rem;
   margin: 0 20px;
@@ -141,11 +146,31 @@ h1 {
 }
 
 /* Align each column header exactly with the card */
-.crypto-header span:nth-child(1) { flex-basis: 400px ; transform: translateX(64px);}
+.crypto-header span {
+  flex: 1;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .crypto-header,
+  .crypto-card {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .crypto-card h2,
+  .crypto-card p,
+  .crypto-header span {
+    flex-basis: 45%;
+    text-align: center;
+  }
+}
+
+/* .crypto-header span:nth-child(1) { flex-basis: 400px ; transform: translateX(64px);}
 .crypto-header span:nth-child(2) { flex-basis: 80px; text-align: right; }
 .crypto-header span:nth-child(3) { flex-basis: 80px; text-align: right; }
 .crypto-header span:nth-child(4) { flex-basis: 80px; text-align: right; }
-.crypto-header span:nth-child(5) { flex-basis: 80px; text-align: right; }
+.crypto-header span:nth-child(5) { flex-basis: 80px; text-align: right; } */
 
 /* ================= Responsive ================= */
 @media (max-width: 600px) {
