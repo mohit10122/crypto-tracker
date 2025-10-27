@@ -128,10 +128,10 @@ h1 {
   font-weight: bold;
   border-bottom: 2px solid #facc15;
   margin-bottom: 10px;
-  position: sticky;
-  top: 0;
-  background-color: #3b4d63;
-  z-index: 10;
+  /* position: sticky; */
+  /* top: 0; */
+  background-color: #2C3539;
+  /* z-index: 10; */
 }
 
 .container.light .crypto-header {

@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     fetchCoins();
-    const interval = setInterval(fetchCoins, 30000); // Auto-refresh every 30 sec
+    const interval = setInterval(fetchCoins, 30000); 
     return () => clearInterval(interval);
   }, []);
 
